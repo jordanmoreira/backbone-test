@@ -31,3 +31,7 @@ Now if you go to http://localhost:3000/clinics/1, you'll get:
   "phone": "(85) 3268-1427" 
 }
 ```
+
+Double-click index.html.
+
+
