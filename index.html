@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Veterinary Clinics</title>
+
+    <div class="page-header">
+        <h2 class="text-muted" align="center">Clinics</h3>
+    </div>
+
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="oowlish-footer">
+            <p>&copy;Oowlish clinics</p>
+        </div>
+    </div>
+
+    <!--Templates-->
+    <script type="text/html" id="clinicCollectionTemplate">
+        <ul id= "clinicList" class="list-group list-group-flush" align="center">
+            <a href="#clinic-details/" class="list-group-item" id="clinicItem">{{ name }}</a>
+        </ul>
+    </script>
+
+    <script type="text/html" id="clinicTemplate">
+        <div class="jumbotron container" align="center"> 
+            <li class="list-group-item">{{ name }}</li>
+            <li class="list-group-item">{{ address }}</li>
+            <li class="list-group-item">{{ phone }}</li>
+            &nbsp
+            <div>
+                <button type="button" class="btn btn-dark" id="goBack">Home</button>
+            </div>
+        </div>
+    </script>
+
+    <!--Javascript Libraries-->
+    <script src="js/lib/jquery-min.js"></script>
+    <script src="js/lib/underscore-min.js"></script>
+    <script src="js/lib/backbone-min.js"></script>
+    <script src="js/lib/mustache.js"></script>
+
+    <!--Application Modules-->
+    <script src="src/models/clinic.js"></script>
+    <script src="src/collections/clinics.js"></script>
+
+    <script src="src/views/clinicView.js"></script>
+    <script src="src/views/clinicsView.js"></script>
+    <script src="src/views/clinicDetailsView.js"></script>
+
+    <script src="src/routers/clinicRouter.js"></script>
+
+    <script src="src/main.js"></script>
+</body>
+
+</html>

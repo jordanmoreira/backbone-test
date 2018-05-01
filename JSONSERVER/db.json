@@ -1,0 +1,64 @@
+{
+    "clinics": [
+        {
+            "id": "1",
+            "name": "Clínica Veterinária Natureza Animal",
+            "address": "Av. Santos Dumont, 2484 - Loja 03",
+            "phone": "(85) 3268-1427"
+        },
+        {
+            "id": "2",
+            "name": "Clinica Veterinaria e Pet Shop Faro Fino Plantão 2",
+            "address": "Av. Des. Moreira, 177",
+            "phone": "(85) 3242-6484"
+        },
+        {
+            "id": "3",
+            "name": "Faro Fino Aldeota",
+            "address": "Av. Barão de Studart, 900",
+            "phone": "(85) 3261-2371"
+        },
+        {
+            "id": "4",
+            "name": "Vetworld Clínica Veterinária 24h",
+            "address": "Rua Pereira Filgueiras, 1550",
+            "phone": "(85) 3264-4548"
+        },
+        {
+            "id": "5",
+            "name": "Clínica Veterinária Garra",
+            "address": "Rua Frei Mansueto, 1427",
+            "phone": "(85) 3267-2625"
+        },
+        {
+            "id": "6",
+            "name": "Policlínica Veterinária de Fortaleza",
+            "address": "Av. Rui Barbosa, 1860",
+            "phone": "(85) 3088-6664"
+        },
+        {
+            "id": "7",
+            "name": "Bicho do Mato",
+            "address": "R. Tibúrcio Cavalcante, 2453",
+            "phone": "(85) 3224-7286"
+        },
+        {
+            "id": "8",
+            "name": "Clínica Veterinária Pet Saúde",
+            "address": "Av. Antônio Sales, 1441",
+            "phone": "(85) 3246-2056"
+        },
+        {
+            "id": "9",
+            "name": "Clínica Veterinária Monsenhor Bruno",
+            "address": "R. Monsenhor Bruno, 2180",
+            "phone": "(85) 3244-1096"
+        },
+        {
+            "id": "10",
+            "name": "Clínica Veterinária Vetmed",
+            "address": "Av. Antônio Sales, 3401",
+            "phone": "(85) 3224-3464"
+        }
+    ]
+}
