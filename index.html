@@ -8,8 +8,11 @@
 
     <title>Veterinary Clinics</title>
 
-    <div class="page-header">
-        <h2 class="text-muted" align="center">Clinics</h3>
+    <div class="page-header" style="margin-bottom:0px">
+        <!-- <h2 style="color: orangered" align="center">Clinics</h3> -->
+        <img style="margin-left: 555px; height: 60px;" 
+        src="assets/imgs/oowlish-logo-sm.png" 
+        alt="oowlish-logo">
     </div>
 
 
@@ -21,25 +24,29 @@
 
     <div id="container">
         <div class="oowlish-footer">
-            <p>&copy;Oowlish clinics</p>
+            <p>&copy;Oowlish</p>
         </div>
     </div>
 
     <!--Templates-->
     <script type="text/html" id="clinicCollectionTemplate">
         <ul id= "clinicList" class="list-group list-group-flush" align="center">
-            <a href="#clinic-details/" class="list-group-item" id="clinicItem">{{ name }}</a>
+            <a href="#clinic-details/" style="color: orangered" class="list-group-item" id="clinicItem">{{ name }}</a>
         </ul>
     </script>
 
     <script type="text/html" id="clinicTemplate">
-        <div class="jumbotron container" align="center"> 
-            <li class="list-group-item">{{ name }}</li>
-            <li class="list-group-item">{{ address }}</li>
-            <li class="list-group-item">{{ phone }}</li>
+        <div class="jumbotron-oowlish container" align="center"> 
+            <li class="list-group-item-oowlish">{{ name }}</li>
+            <li class="list-group-item-oowlish">{{ address }}</li>
+            <li class="list-group-item-oowlish">{{ phone }}</li>
             &nbsp
             <div>
-                <button type="button" class="btn btn-dark" id="goBack">Home</button>
+                <button type="button" class="btn btn-primary-oowlish" id="goBack">Home</button>
+            </div>
+
+            <div class="oowlish-footer">
+                <p>&copy;Oowlish</p>
             </div>
         </div>
     </script>

@@ -7,8 +7,9 @@ var ClinicsView = Backbone.View.extend({
             throw new Error("model is not specified.");
     },
 
-    initialize: function() {
-        this.listenTo(this.model, 'sync', this.render);
+    initialize: function () {
+        // Listens to events on the model
+        this.listenTo(this.model, "sync", this.render);
     },
 
     render: function () {
@@ -20,5 +21,5 @@ var ClinicsView = Backbone.View.extend({
         });
 
         return this;
-    },
+    }
 });
