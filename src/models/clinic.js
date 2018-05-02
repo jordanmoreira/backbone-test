@@ -1,5 +1,5 @@
 // Model.
 var Clinic = Backbone.Model.extend({
+    // Defines the ID attribute.
     idAttribute: "id",
-    urlRoot: "http://localhost:3000/clinics"
 });

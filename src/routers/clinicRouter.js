@@ -1,10 +1,8 @@
 
 (function () {
-
-    var $container = $("#container");
-
     // Router constructor.
     ClinicRouter = Backbone.Router.extend({
+        // Defines the URLs that will trigger the callback functions.
         routes: {
             "clinic-details/:id": "viewClinicById",
             "": "index"
@@ -12,40 +10,30 @@
         initialize: function () {
             // Stores clinics collection reference in router.
             this.clinicsCollection = new Clinics();
+            // Fetch the clinics collection.
             this.clinicsCollection.fetch();
         },
-        changeView: function (view) {
-            // Stores the current view and then remove it.
-            if (this.currentView) {
-                if (this.currentView == view) {
-                    return;
-                }
-                this.currentView.remove();
-            }
-            //$container.html(view.render().el);
-            $("body").append(view.render().$el);
-            
-            this.currentView = view;
-        },
         viewClinicById: function (id) {
-            //Create and Renders the selected clinic.
+            //Gets the object by it's id attribute.
             var model = this.clinicsCollection.get(id);
+            // Creates a new ClinicDetailsView() passing the container element and
+            // the above retrieved object as a model.
             var view = new ClinicDetailsView({
                 el: "#container",
                 model: model
             });
-
+            // Renders the view.
             view.render();
         },
         index: function () {
-            // Create and Renders the clinics list.
+            // Creates a new ClinicsView() passing the container element and 
+            // the clinics collection to it as a model.
             var view = new ClinicsView({
                 el: "#container",
                 model: this.clinicsCollection
             });
+            // Appends the element of the the renderized objects to the page's body.
             $("body").append(view.render().$el);
-
-            this.changeView(view);
         }
     });
 }());
